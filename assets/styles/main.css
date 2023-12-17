@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url('../styles/header.css');
+:root{
+    font-size: 62.5%;
+    --background-color:#EBECEE;
+    --background-color-header:#fff;
+    --section-color: linear-gradient(98deg, #002F52 35.49%, #326589 165.37%);
+    --title-colors-1:#EB9B00;
+    --subtitle-color:#002F52;
+    --text-color:#000000d9;
+
+    --title-font-size-sm: 1.8rem;
+    --text-font-size-sm: 1.6rem;
+    --description-font-size-sm:1.4rem;
+    --title-font-size-md: 3.6rem;
+    --subtitle-font-size-md: 2.6rem;
+    --text-font-size-md: 1.6rem;
+    --description-font-size-md:1.4rem;
+    --title-font-size-lg: 3.6rem;
+    --subtitle-font-size-md: 3.2rem;
+    --text-font-size-lg: 1.6rem;
+    --description-font-size-lg:1.4rem;
+    --title-font-wheight:700;
+    --text-font-wheight:500;
+    --description-font-wheight:300;
+}
+
+body{
+    background: var(--background-color);
+    font-family: Poppins, sans-serif;
+}
+
+.banner{
+    background: var(--subtitle-color);
+    color: var(--background-color-header);
+    text-align: center;
+    padding: 4rem 3.2rem;
+}
+
+.banner .banner__titulo{
+    font-size: var(--title-font-size-sm);
+    font-weight: var(--title-font-wheight);
+}
+
+.banner .banner__texto{
+    font-size: var(--text-font-size-sm);
+    font-weight: var(--text-font-wheight);
+    margin: 1.6rem 2rem;
+}
+
+.banner .banner__busca{
+    background-color: transparent;
+    border: 1px solid var(--background-color-header);
+    border-radius: 24px;
+    width: 100%;
+    padding: 1.6rem;
+    color: var(--background-color-header);
+}
+
+.banner .banner__busca::placeholder{
+    text-align: center;
+    font-size: var(--description-font-size-sm);
+    font-weight: var(--description-font-wheight);
+    color: var(--background-color-header);
+    background: url(../images/search_icon.svg);
+    background-repeat: no-repeat;
+    background-position: 1.6rem;
+}
