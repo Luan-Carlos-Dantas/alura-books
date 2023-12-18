@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 @import url('../styles/header.css');
+@import url('../styles/banner.css');
+@import url('../styles/carousel.css');
+@import url('../styles/topicos.css');
+@import url('../styles/contato.css');
 :root{
     font-size: 62.5%;
     --background-color:#EBECEE;
@@ -30,39 +34,16 @@ body{
     font-family: Poppins, sans-serif;
 }
 
-.banner{
-    background: var(--subtitle-color);
-    color: var(--background-color-header);
-    text-align: center;
-    padding: 4rem 3.2rem;
+hr{
+    margin: 0;
 }
 
-.banner .banner__titulo{
-    font-size: var(--title-font-size-sm);
-    font-weight: var(--title-font-wheight);
-}
-
-.banner .banner__texto{
-    font-size: var(--text-font-size-sm);
-    font-weight: var(--text-font-wheight);
-    margin: 1.6rem 2rem;
-}
-
-.banner .banner__busca{
-    background-color: transparent;
-    border: 1px solid var(--background-color-header);
-    border-radius: 24px;
-    width: 100%;
+footer{
+    background-color: var(--background-color-header);
     padding: 1.6rem;
-    color: var(--background-color-header);
 }
 
-.banner .banner__busca::placeholder{
-    text-align: center;
-    font-size: var(--description-font-size-sm);
-    font-weight: var(--description-font-wheight);
-    color: var(--background-color-header);
-    background: url(../images/search_icon.svg);
-    background-repeat: no-repeat;
-    background-position: 1.6rem;
+footer h2{
+    font-size: var(--text-font-size-sm);
+    color: var(--text-color);
 }
