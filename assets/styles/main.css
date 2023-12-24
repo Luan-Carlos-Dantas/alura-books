@@ -1,49 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
-@import url('../styles/header.css');
-@import url('../styles/banner.css');
-@import url('../styles/carousel.css');
-@import url('../styles/topicos.css');
-@import url('../styles/contato.css');
-:root{
-    font-size: 62.5%;
-    --background-color:#EBECEE;
-    --background-color-header:#fff;
-    --section-color: linear-gradient(98deg, #002F52 35.49%, #326589 165.37%);
-    --title-colors-1:#EB9B00;
-    --subtitle-color:#002F52;
-    --text-color:#000000d9;
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("../styles/header.css");
+@import url("../styles/banner.css");
+@import url("../styles/carousel.css");
+@import url("../styles/topicos.css");
+@import url("../styles/contato.css");
+@import url("../styles/footer.css");
 
-    --title-font-size-sm: 1.8rem;
-    --text-font-size-sm: 1.6rem;
-    --description-font-size-sm:1.4rem;
-    --title-font-size-md: 3.6rem;
-    --subtitle-font-size-md: 2.6rem;
-    --text-font-size-md: 1.6rem;
-    --description-font-size-md:1.4rem;
-    --title-font-size-lg: 3.6rem;
-    --subtitle-font-size-md: 3.2rem;
-    --text-font-size-lg: 1.6rem;
-    --description-font-size-lg:1.4rem;
-    --title-font-wheight:700;
-    --text-font-wheight:500;
-    --description-font-wheight:300;
+:root {
+  font-size: 62.5%;
+  --background-color: #ebecee;
+  --background-color-header: #fff;
+  --section-color: linear-gradient(98deg, #002f52 35.49%, #326589 165.37%);
+  --title-colors-1: #eb9b00;
+  --subtitle-color: #002f52;
+  --text-color: #000000d9;
+
+  --title-font-size-sm: 1.8rem;
+  --text-font-size-sm: 1.6rem;
+  --description-font-size-sm: 1.4rem;
+  --title-font-size-md: 3.6rem;
+  --subtitle-font-size-md: 2.6rem;
+  --text-font-size-md: 1.6rem;
+  --description-font-size-md: 1.4rem;
+  --title-font-size-lg: 3.6rem;
+  --subtitle-font-size-md: 3.2rem;
+  --text-font-size-lg: 1.6rem;
+  --description-font-size-lg: 1.4rem;
+  --title-font-wheight: 700;
+  --text-font-wheight: 500;
+  --description-font-wheight: 300;
 }
 
-body{
-    background: var(--background-color);
-    font-family: Poppins, sans-serif;
+body {
+  background: var(--background-color);
+  font-family: Poppins, sans-serif;
 }
 
-hr{
-    margin: 0;
-}
-
-footer{
-    background-color: var(--background-color-header);
-    padding: 1.6rem;
-}
-
-footer h2{
-    font-size: var(--text-font-size-sm);
-    color: var(--text-color);
+hr {
+  margin: 0;
 }

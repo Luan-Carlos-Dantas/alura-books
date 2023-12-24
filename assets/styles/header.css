@@ -1,62 +1,144 @@
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: var(--background-color-header);
-    position: relative;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--background-color-header);
+  position: relative;
 }
 
-header .container{
-    display: flex;
-    align-items: center;
+header .container {
+  display: flex;
+  align-items: center;
 }
 
-header .container .container__img{
-    padding: 1.6rem;
+header .container .container__img {
+  padding: 1.6rem;
 }
 
-header .cabecalho_menu-hamburguer{
-    background-image: url(../images/Menu.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 2.4rem;
-    height: 2.4rem;
-    display: inline-block;
-    cursor: pointer;
+header .container .container__titulo {
+  display: none;
 }
 
-header .lista-menu{
-    display: none;
-    position: absolute;
-    top: 100%;
-    width: 60vw;
+header .opcoes {
+  display: none;
 }
 
-.lista-menu .lista-menu__titulo{
-    font-size: var(--text-font-size-sm);
-    font-weight: var(--title-font-wheight);
-    color: var(--title-colors-1);
+header .cabecalho_menu-hamburguer {
+  display: block;
+  background-image: url(../images/Menu.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  display: inline-block;
+  cursor: pointer;
 }
 
-.lista-menu .lista-menu__item .lista-menu__link{
-    font-size: var(--text-font-size-sm);
-    font-weight: var(--text-font-wheight);
-    color: var(--subtitle-color);
-    background-clip: text;
-    text-decoration: none;
-    text-transform: uppercase;
+header .lista-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 60vw;
 }
 
+.lista-menu .lista-menu__titulo {
+  font-size: var(--text-font-size-sm);
+  font-weight: var(--title-font-wheight);
+  color: var(--title-colors-1);
+}
+
+.lista-menu .lista-menu__item .lista-menu__link {
+  font-size: var(--text-font-size-sm);
+  font-weight: var(--text-font-wheight);
+  color: var(--subtitle-color);
+  background-clip: text;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 
 .lista-menu .lista-menu__titulo,
-.lista-menu .lista-menu__item{
-    padding: 1.6rem;
-    background-color: var(--background-color-header);
+.lista-menu .lista-menu__item {
+  padding: 1.6rem;
+  background-color: var(--background-color-header);
 }
-header .container__menu{
-    display: none;
+header .container__menu {
+  display: none;
 }
 
-header .container__menu:checked~.lista-menu{
+header .container__menu:checked ~ .lista-menu {
+  display: block;
+}
+
+header .container .container__texto {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  header .cabecalho_menu-hamburguer {
+    display: none;
+  }
+
+  header .container .container__titulo {
     display: block;
+    font-size: var(--subtitle-font-size-md);
+    font-family: Josefin Sans, sans-serif;
+    font-weight: var(--text-font-wheight);
+  }
+
+  header .container .container__titulo .container__titulo-negrito {
+    font-weight: var(--title-font-wheight);
+  }
+
+  header .opcoes {
+    display: flex;
+    gap: 1.6rem;
+  }
+
+  header .opcoes .opcoes__item {
+    text-transform: uppercase;
+    font-size: var(--text-font-size-md);
+    padding: 0 1.6rem;
+  }
+
+  header .opcoes .opcoes__item .opcoes__link {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+  header .opcoes .opcoes__botao {
+    display: none;
+  }
+
+  header .opcoes .opcoes__botao:checked ~ .lista-menu {
+    display: block;
+    width: auto;
+  }
+
+  .lista-menu .lista-menu__item:hover {
+    background: var(--section-color);
+  }
+
+  .lista-menu .lista-menu__item:hover .lista-menu__link {
+    color: var(--background-color-header);
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  header {
+    padding: 0 3.2rem;
+  }
+
+  header .opcoes {
+    margin-right: auto;
+  }
+
+  header .container .container__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  header .container .container__texto {
+    display: block;
+    color: var(--text-color);
+    font-size: 2rem;
+  }
 }
